@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="icon" href="images/favicon-32x32.png" type="image/jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">"
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Stats preview card component</title>
@@ -13,22 +18,38 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
 </head>
 <body>
+  <main>
 
-  Get insights that help your business grow.
+    <div class="flexbox-main-container">
+      <div class="spc-presentation">
+        <h1 class="spc-head">Get <span>insights</span> that help your business grow.</h1>
+        <p class="spc-head-description">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+      </div>
+      <div class="flexbox-nested-container">
+        <div class="flexbox-nested-container-box">
+          <h3 class="count-box">10k+</h3>
+          <p class="type-count-box">companies</p>
+        </div>
+        <div class="flexbox-nested-container-box">
+          <h3 class="count-box">314</h3>
+          <p class="type-count-box">templates</p>
+        </div>
+        <div class="flexbox-nested-container-box">
+          <h3 class="count-box">12m+</h3>
+          <p class="type-count-box">queries</p>
+        </div>
+      </div>
+    </div>
+    <div class="spc-image"></div>
+    </div>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">ecesarini</a>.
   </div>
 </body>
 </html>
-
