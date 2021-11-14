@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">"
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Stats preview card component</title>
@@ -44,21 +44,42 @@
       border-radius: var(--border-radius) var(--border-radius);
       justify-content: center;
     }
+    .spc-head, .type-count-box {
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .spc-head-description, .type-box {
+      font-family: 'Lexend Deca', sans-serif;
+    }
+    .spc-head-description {
+      color: var(--slightly-transparent-white-mp);
+    }
+    .type-box {
+      color: var(--slightly-transparent-white-sh);
+      text-transform: uppercase;
+    }
     .spc-flexbox {
       flex-basis: 50%;
     }
     .spc-presentation {
       margin: 0 10%;
     }
+    .spc-presentation span {
+      color: var(--soft-violet);
+    }
     .flexbox-nested-container {
       display: flex;
       justify-content: space-between;
     }
-    #flexbox-main-container.spc-image {
-      height: 100%;
+    .flexbox-nested-container {
+      text-align: center;
+    }
+    .spc-image {
       background-image: url("images/image-header-desktop.jpg");
-      background-size: cover;
-      background-color: white;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      border-radius: 0 var(--border-radius) var(--border-radius) 0;
     }
   </style>
 
@@ -73,20 +94,20 @@
         <div class="flexbox-nested-container">
           <div class="flexbox-nested-container-box">
             <h3 class="count-box">10k+</h3>
-            <p class="type-count-box">companies</p>
+            <p class="type-box">companies</p>
           </div>
           <div class="flexbox-nested-container-box">
             <h3 class="count-box">314</h3>
-            <p class="type-count-box">templates</p>
+            <p class="type-box">templates</p>
           </div>
           <div class="flexbox-nested-container-box">
-            <h3 class="count-box">12m+</h3>
-            <p class="type-count-box">queries</p>
+            <h3 class="count-box">12M+</h3>
+            <p class="type-box">queries</p>
           </div>
         </div>
       </div>
     </div>
-      <div class="spc-image"></div>
+    <div class="spc-flexbox spc-image"></div>
   </div>
   </main>
   <div class="attribution">
