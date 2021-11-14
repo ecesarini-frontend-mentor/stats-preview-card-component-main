@@ -44,19 +44,21 @@
       border-radius: var(--border-radius) var(--border-radius);
       justify-content: center;
     }
-    .spc-presentation, .spc-image {
+    .spc-flexbox {
+      flex-basis: 50%;
     }
     .spc-presentation {
-      padding: 0 70px;
+      margin: 0 10%;
     }
     .flexbox-nested-container {
       display: flex;
       justify-content: space-between;
     }
-    .spc-image {
-      width: 50%;
+    #flexbox-main-container.spc-image {
+      height: 100%;
       background-image: url("images/image-header-desktop.jpg");
       background-size: cover;
+      background-color: white;
     }
   </style>
 
@@ -64,6 +66,7 @@
 <body>
   <main>
   <div class="flexbox-main-container">
+    <div class="spc-flexbox spc-presentation-container">
       <div class="spc-presentation">
         <h1 class="spc-head">Get <span>insights</span> that help your business grow.</h1>
         <p class="spc-head-description">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
@@ -82,7 +85,8 @@
           </div>
         </div>
       </div>
-    <div class="spc-image"></div>
+    </div>
+      <div class="spc-image"></div>
   </div>
   </main>
   <div class="attribution">
