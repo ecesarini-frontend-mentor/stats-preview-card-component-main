@@ -47,7 +47,8 @@
     }
     
     .spc-image-desktop {
-      /*background-siz: 100% 100%;*/
+      width: inherit;
+      height: inherit;
       border-radius: 0 var(--border-radius) var(--border-radius) 0;
     }
     .spc-head, .count-box {
@@ -91,7 +92,7 @@
   <div class="flexbox-main-container">
     <header class="spc-flexbox spc-header">
       <picture class="spc-image">
-        <source clss= "spc-image-mobile" media="(max-width: 375px)" srcset="images/image-header-mobile.jpg">
+        <source class="spc-image-mobile" media="(max-width: 375px)" srcset="images/image-header-mobile.jpg">
         <img class="spc-image-desktop" src="images/image-header-desktop.jpg" alt="header image">
       </picture>
     </header>
