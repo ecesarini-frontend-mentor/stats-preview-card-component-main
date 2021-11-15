@@ -45,6 +45,13 @@
       border-radius: var(--border-radius) var(--border-radius);
       justify-content: center;
     }
+    
+    .spc-image {
+      background-color: blanchedalmond;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    }
     .spc-head, .count-box {
       font-family: "Inter", sans-serif;
       font-weight: 700;
@@ -79,20 +86,13 @@
       display: flex;
       justify-content: space-between;
     }
-    .spc-image {
-      background-color: blanchedalmond;
-      background-image: url("images/image-header-desktop.jpg");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      border-radius: 0 var(--border-radius) var(--border-radius) 0;
-    }
   </style>
 
 </head>
 <body>
   <main>
   <div class="flexbox-main-container">
-    <header class="spc-header">
+    <header class="spc-flexbox spc-header">
       <picture class="spc-image">
         <source media="(max-width: 1440px)" srcset="images/image-header-desktop.jpg">
         <source media="(min-width: 375px)" srcset="images/image-header-mobile.jpg">
