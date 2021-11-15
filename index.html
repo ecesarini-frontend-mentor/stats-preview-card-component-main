@@ -11,7 +11,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Stats preview card component</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -21,6 +20,7 @@
       --very-dark-blue: hsl(233, 47%, 7%);
       --dark-desaturated-blue: hsl(244, 38%, 16%);
       --soft-violet: hsl(277, 64%, 61%);
+      --header-background: hsla(277, 64%, 61%, 30%);
       --white: hsl(0, 0%, 100%);
       --slightly-transparent-white-mp: hsla(0, 0%, 100%, 0.75);
       --slightly-transparent-white-sh: hsla(0, 0%, 100%, 0.6);
@@ -37,7 +37,7 @@
       margin: 22% 11.5%;
     }
 
-    .flexbox-main-container {
+    #flexbox-main-container {
       width: 100%;
       display: flex;
       flex-direction: row-reverse;
@@ -45,14 +45,21 @@
       border-radius: var(--border-radius) var(--border-radius);
       justify-content: center;
     }
-    .spc-header {
-      background-color: var(--soft-violet);
-      background-size: 100% 100%;
-      opacity: 50%;
-      border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    #flexbox-main-container .spc-flexbox {
+      flex-basis: 50%;
     }
-    .spc-header.spc-header-image {
+    #flexbox-main-container .spc-header {
+      background-color: var(--header-background);
+      border-radius: 0 var(--border-radius) var(--border-radius) 0;
+      z-index: 1;
+    }
+    #flexbox-main-container .spc-header .spc-header-image {
+      min-width: 100%;
+      min-height: 100%;
       background-image: url(images/image-header-desktop.jpg);
+      background-size: 100% 100%;
+      border-radius: 0 var(--border-radius) var(--border-radius) 0;
+      opacity: .45;
     }
     .spc-head, .count-box {
       font-family: 'Inter', sans-serif;
@@ -75,9 +82,6 @@
       text-transform: uppercase;
       margin-top: 0%;
     }
-    .spc-flexbox {
-      flex-basis: 50%;
-    }
     .spc-presentation {
       margin: 0 10%;
     }
@@ -92,7 +96,7 @@
 </head>
 <body>
   <main>
-  <div class="flexbox-main-container">
+  <div id="flexbox-main-container">
     <header class="spc-flexbox spc-header">
       <div class="spc-header-image"></div>
     </header>
