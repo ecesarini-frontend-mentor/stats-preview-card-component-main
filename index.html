@@ -107,13 +107,19 @@
         background-image: url(images/image-header-desktop.jpg);
         border-radius: var(--border-radius) var(--border-radius) 0 0;
       }
-      .spc-flexbox {
-        flex-basis: 50%;
-      }
     }
     @media (max-width: 350px) {
       .spc-header-image {
         background-image: url(images/image-header-mobile.jpg);
+      }
+    }
+    @media (max-width: 280px) {
+      .flexbox-nested-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .flexbox-nested-container .count-box {
+        text-align: center;
       }
     }
   </style>
