@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click my page](https://ecesarini-frontend-mentor.github.io/order-summary-component-main/)
+- Solution URL: [Click my page](https://ecesarini-frontend-mentor.github.io/stats-preview-card-component-main/)
 
 ## My process
 
