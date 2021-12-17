@@ -44,8 +44,6 @@ Manage responsive design using _@media query_
 I'm quite noob on _front-end design_. This challenge helped me focusing on main CSS-HTML best practice when you try to get a good web page.
 Learned few things about managing dimensions, inherity and flexboxes.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
 ## Author
 
 - Frontend Mentor - [@ecesarini](https://www.frontendmentor.io/profile/ecesarini)
